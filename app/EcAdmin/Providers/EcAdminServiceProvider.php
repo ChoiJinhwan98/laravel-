@@ -8,7 +8,7 @@ class EcAdminServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        Blade::componentNamespace('App\\EcAdmin\\View\\Components', 'ea');
-        Blade::anonymousComponentNamespace('components', 'ea');
+        Blade::componentNamespace('App\\EcAdmin\\Components', 'ea');
+        Blade::anonymousComponentNamespace('ec_admin.components', 'ea');
     }
 }
